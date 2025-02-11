@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="reset.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <title>Screen saver</title>
+</head>
+<body>
+  <section class="container">
+
+    <div class="clock">
+      <img src="./src/assets/clock_back.svg" alt="">
+    </div>
+
+    <div class="info">
+      <div class="time" id="time">
+        <span id="hrs"></span>
+        :
+        <span id="min"></span>
+        :
+        <span id="sec"></span>
+      </div>
+      <div class="date">
+        <span id="date"></span>
+        &nbsp;
+        <span id="month"></span>
+        &nbsp;
+        <span id="year"></span>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <div class="buttons__item">
+        Hrs
+        <img src="./src/assets/arrow.svg" alt="">
+      </div>
+      <div class="buttons__item">
+        Min
+        <img src="./src/assets/arrow.svg" alt="">
+      </div>
+      <div class="buttons__item">
+        Sec
+        <img src="./src/assets/arrow.svg" alt="">
+      </div>
+    </div>
+
+    <div class="buttons__item buttons__item_alarm">
+      Set alarm
+    </div>
+
+  </section>
+
+  <script src="./src/index.js"></script>
+</body>
+</html>
