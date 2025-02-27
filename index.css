@@ -1,3 +1,7 @@
+body {
+  background-color: #feb7e1;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -82,7 +86,7 @@
   line-height: 21.78px;
   letter-spacing: 0%;
   color: #9CADCE;
-  background-color: #fff;
+  background-color: transparent;
 }
 
 .buttons__item_alarm {
