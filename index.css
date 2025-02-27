@@ -1,5 +1,6 @@
 body {
-  background-color: #feb7e1;
+  background-color: #ffd5ef;
+  
 }
 
 .container {
@@ -8,12 +9,11 @@ body {
   align-items: center;
   width: 400px;
   height: 466.67px;
-  
-  border: 1px solid #9CADCE;
+  background-color: #feb7e1;
+  border: 1px solid #f8c9e5;
   border-radius: 25px;
   box-shadow: 
-    -4px -4px 12px 0 #9CADCE,
-    4px 4px 12px 0 #9CADCE
+    7px 7px 0 0 #b78aa5
   ;
 }
 
@@ -21,7 +21,83 @@ body {
   padding: 6.67px;
   margin-top: 28px;
   margin-bottom: 42px;
+
+  width: 68px;
+  aspect-ratio: 1;
+  background-color: #9CADCE;
+  border-radius: 20px;
+  position: relative;
 }
+
+.center {
+  position: absolute;
+  width: 2px;
+  aspect-ratio: 1;
+  background-color: #fff;
+  top: 34px;
+  left: 34px;
+  z-index: 4;
+}
+
+.invisible-hand {
+  background-color: transparent;
+}
+
+.visible-hand {
+  border-radius: 2px;
+}
+
+#sec_hand {
+  width: 4px;
+  height: 44px;
+  position: absolute;
+  top: 13px;
+  left: 32px;
+  display: flex;
+  flex-direction: column;
+  z-index: 3;
+}
+
+#sec_hand .visible-hand {
+  height: 22px;
+  width: 4px;
+  background-color: #8e5d5d;
+}
+
+#min_hand {
+  width: 4px;
+  height: 54px;
+  position: absolute;
+  top: 8px;
+  left: 32px;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+}
+
+#min_hand .visible-hand {
+  background-color: #fff;
+  width: 4px;
+  height: 27px;
+}
+
+#hrs_hand {
+  width: 4px;
+  height: 50px;
+  position: absolute;
+  top: 9px;
+  left: 32px;
+  display: flex;
+  flex-direction: column;
+  z-index: 3;
+} 
+
+#hrs_hand .visible-hand {
+  background-color: #fff;
+  width: 4px;
+  height: 25px;
+}
+
 
 .info {
   display: flex;
@@ -79,7 +155,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 7px 7px 25px 0 rgba(0,0,0,.2);
   font-family: Inter;
   font-weight: 400;
   font-size: 18px;

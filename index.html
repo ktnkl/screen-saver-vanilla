@@ -12,7 +12,19 @@
   <section class="container">
 
     <div class="clock">
-      <img src="./src/assets/clock_back.svg" alt="">
+      <div id="center"></div>
+      <div id="min_hand">
+        <div class="visible-hand"></div>
+        <div class="invisible-hand"></div>
+      </div>
+      <div id="hrs_hand">
+        <div class="visible-hand"></div>
+        <div class="invisible-hand"></div>
+      </div>
+      <div id="sec_hand">
+        <div class="visible-hand"></div>
+        <div class="invisible-hand"></div>
+      </div>
     </div>
 
     <div class="info">
@@ -33,15 +45,15 @@
     </div>
 
     <div class="buttons">
-      <div class="buttons__item">
+      <div class="buttons__item" id="hrs_button">
         Hrs
         <img src="./src/assets/arrow.svg" alt="">
       </div>
-      <div class="buttons__item">
+      <div class="buttons__item" id="min_button">
         Min
         <img src="./src/assets/arrow.svg" alt="">
       </div>
-      <div class="buttons__item">
+      <div class="buttons__item" id="sec_button">
         Sec
         <img src="./src/assets/arrow.svg" alt="">
       </div>
